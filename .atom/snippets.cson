@@ -1,0 +1,73 @@
+# Your snippets
+#
+# Atom snippets allow you to enter a simple prefix in the editor and hit tab to
+# expand the prefix into a larger code block with templated values.
+#
+# You can create a new snippet in this file by typing "snip" and then hitting
+# tab.
+#
+# An example CoffeeScript snippet to expand log to console.log:
+#
+# '.source.coffee':
+#   'Console log':
+#     'prefix': 'log'
+#     'body': 'console.log $1'
+#
+# Each scope (e.g. '.source.coffee' above) can only be declared once.
+#
+# This file uses CoffeeScript Object Notation (CSON).
+# If you are unfamiliar with CSON, you can read more about it in the
+# Atom Flight Manual:
+# http://flight-manual.atom.io/using-atom/sections/basic-customization/#_cson
+
+'.source.js, .source.jsx':
+  'react stateful component':
+    'prefix': 'rl'
+    'body': """
+      import React from 'react'
+      import PropTypes from 'prop-types'
+
+      class $1 extends React.Component {
+        constructor(props) {
+          super(props);
+          this.state = {
+            name: ''
+          }
+        }
+
+        render() {
+          return (
+          <div>
+          <h1>{this.state.name}</h1>
+          </div>
+          )
+        }
+      }
+
+      export default $1;
+    """
+  'react stateless component':
+    'prefix': 'rs'
+    'body': """
+        import React from 'react'
+        import PropTypes from 'prop-types'
+
+        const $1 = ({ username }) => (
+        <p>The logged in user is: {username}</p>
+        )
+
+        $1.propTypes = {
+          username: React.PropTypes.string.isRequired,
+        }
+
+        $1.defaultProps = {
+          username: 'Clem',
+        }
+
+        export default $1;
+      """
+  'import':
+    'prefix': 'im'
+    'body': """
+      import $1 from './$1.js'
+      """

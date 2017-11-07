@@ -1,0 +1,375 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "/private/var/folders/j_/xfqb54zs25586zvwky4285h80000gn/T/d-117529-733-qb3q7w.rs8noh6w29/package.tgz",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "/private/var/folders/j_/xfqb54zs25586zvwky4285h80000gn/T/d-117529-733-qb3q7w.rs8noh6w29/package.tgz",
+        "spec": "/private/var/folders/j_/xfqb54zs25586zvwky4285h80000gn/T/d-117529-733-qb3q7w.rs8noh6w29/package.tgz",
+        "type": "local"
+      },
+      "/private/var/folders/j_/xfqb54zs25586zvwky4285h80000gn/T/apm-install-dir-117529-733-3n6hip.f1sr5uq5mi"
+    ]
+  ],
+  "_from": "../d-117529-733-qb3q7w.rs8noh6w29/package.tgz",
+  "_id": "auto-update-packages@1.0.1",
+  "_inCache": true,
+  "_location": "/auto-update-packages",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "/private/var/folders/j_/xfqb54zs25586zvwky4285h80000gn/T/d-117529-733-qb3q7w.rs8noh6w29/package.tgz",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "/private/var/folders/j_/xfqb54zs25586zvwky4285h80000gn/T/d-117529-733-qb3q7w.rs8noh6w29/package.tgz",
+    "spec": "/private/var/folders/j_/xfqb54zs25586zvwky4285h80000gn/T/d-117529-733-qb3q7w.rs8noh6w29/package.tgz",
+    "type": "local"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "file:../d-117529-733-qb3q7w.rs8noh6w29/package.tgz",
+  "_shasum": "d64407794d7307fadf0ce6cc9e3f0588ffc29921",
+  "_shrinkwrap": null,
+  "_spec": "/private/var/folders/j_/xfqb54zs25586zvwky4285h80000gn/T/d-117529-733-qb3q7w.rs8noh6w29/package.tgz",
+  "_where": "/private/var/folders/j_/xfqb54zs25586zvwky4285h80000gn/T/apm-install-dir-117529-733-3n6hip.f1sr5uq5mi",
+  "bugs": {
+    "url": "https://github.com/yujinakayama/atom-auto-update-packages/issues"
+  },
+  "dependencies": {
+    "fs-plus": "^2.0.4",
+    "glob": "^3.2.9"
+  },
+  "description": "Keep your Atom packages up to date.",
+  "devDependencies": {
+    "coffee-script": "^1.7.1",
+    "coffeelint": "^1.1.0"
+  },
+  "engines": {
+    "atom": ">=0.206.0"
+  },
+  "homepage": "https://github.com/yujinakayama/atom-auto-update-packages#readme",
+  "license": "MIT",
+  "main": "./lib/auto-update-packages",
+  "name": "auto-update-packages",
+  "optionalDependencies": {},
+  "os": [
+    "darwin"
+  ],
+  "readme": "[![Build Status](https://travis-ci.org/yujinakayama/atom-auto-update-packages.svg?branch=master)](https://travis-ci.org/yujinakayama/atom-auto-update-packages)\n\n# Auto-Update-Packages for Atom\n\nKeep your Atom packages up to date.\n\n![Screenshot](https://f.cloud.github.com/assets/83656/2521579/c30d4b2a-b4ac-11e3-898a-5c763e9a1c5a.png)\n\n## Installation\n\n```bash\n$ apm install auto-update-packages\n```\n\n## Usage\n\nJust sit tight. :)\n\nauto-update-packages automatically checks for package updates every 6 hours by default.\nIf any updates are available, it installs them and notifies you via OS X Notification Center.\n\nNote that after the update you need to **Reload** (⌃⌥⌘L)\nto apply the updates to the opened Atom window.\n\nIf you're impatient,\nrun **Packages** menu > **Auto Update Packages** > **Update Now**.\n\n## Configuration\n\nYou can configure auto-update-packages\neither\nin the Settings view (**Preferences...** in **Atom** menu)\nor\nin `~/.atom/config.cson` (**Open Your Config** in **Atom** menu):\n\n### Interval Minutes\n\n* Config Key Path: `auto-update-packages.intervalMinutes`\n* Default: 360 minutes (6 hours)\n* Minimum: 15 minutes\n\nSpecify an auto-update interval.\nIf you specify a value less than 15, it will be handled as 15 internally.\n\nNote that auto-update-packages does not adhere the value strictly.\nIt has some margin around 5%.\n\n## License\n\nCopyright (c) 2014 Yuji Nakayama\n\nSee the [LICENSE.txt](LICENSE.txt) for details.\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yujinakayama/atom-auto-update-packages.git"
+  },
+  "version": "1.0.1",
+  "_atomModuleCache": {
+    "version": 1,
+    "dependencies": [
+      {
+        "name": "async",
+        "version": "1.5.2",
+        "path": "node_modules/async/lib/async.js"
+      },
+      {
+        "name": "balanced-match",
+        "version": "1.0.0",
+        "path": "node_modules/balanced-match/index.js"
+      },
+      {
+        "name": "brace-expansion",
+        "version": "1.1.8",
+        "path": "node_modules/brace-expansion/index.js"
+      },
+      {
+        "name": "concat-map",
+        "version": "0.0.1",
+        "path": "node_modules/concat-map/index.js"
+      },
+      {
+        "name": "fs-plus",
+        "version": "2.10.1",
+        "path": "node_modules/fs-plus/lib/fs-plus.js"
+      },
+      {
+        "name": "fs.realpath",
+        "version": "1.0.0",
+        "path": "node_modules/fs.realpath/index.js"
+      },
+      {
+        "name": "glob",
+        "version": "3.2.11",
+        "path": "node_modules/glob/glob.js"
+      },
+      {
+        "name": "minimatch",
+        "version": "0.3.0",
+        "path": "node_modules/glob/node_modules/minimatch/minimatch.js"
+      },
+      {
+        "name": "inflight",
+        "version": "1.0.6",
+        "path": "node_modules/inflight/inflight.js"
+      },
+      {
+        "name": "inherits",
+        "version": "2.0.3",
+        "path": "node_modules/inherits/inherits.js"
+      },
+      {
+        "name": "lru-cache",
+        "version": "2.7.3",
+        "path": "node_modules/lru-cache/lib/lru-cache.js"
+      },
+      {
+        "name": "minimatch",
+        "version": "3.0.4",
+        "path": "node_modules/minimatch/minimatch.js"
+      },
+      {
+        "name": "minimist",
+        "version": "0.0.8",
+        "path": "node_modules/minimist/index.js"
+      },
+      {
+        "name": "mkdirp",
+        "version": "0.5.1",
+        "path": "node_modules/mkdirp/index.js"
+      },
+      {
+        "name": "once",
+        "version": "1.4.0",
+        "path": "node_modules/once/once.js"
+      },
+      {
+        "name": "path-is-absolute",
+        "version": "1.0.1",
+        "path": "node_modules/path-is-absolute/index.js"
+      },
+      {
+        "name": "rimraf",
+        "version": "2.6.1",
+        "path": "node_modules/rimraf/rimraf.js"
+      },
+      {
+        "name": "glob",
+        "version": "7.1.2",
+        "path": "node_modules/rimraf/node_modules/glob/glob.js"
+      },
+      {
+        "name": "sigmund",
+        "version": "1.0.1",
+        "path": "node_modules/sigmund/sigmund.js"
+      },
+      {
+        "name": "underscore",
+        "version": "1.6.0",
+        "path": "node_modules/underscore/underscore.js"
+      },
+      {
+        "name": "underscore-plus",
+        "version": "1.6.6",
+        "path": "node_modules/underscore-plus/lib/underscore-plus.js"
+      },
+      {
+        "name": "wrappy",
+        "version": "1.0.2",
+        "path": "node_modules/wrappy/wrappy.js"
+      }
+    ],
+    "extensions": {
+      ".json": [
+        "coffeelint.json",
+        "node_modules/async/package.json",
+        "node_modules/balanced-match/package.json",
+        "node_modules/brace-expansion/package.json",
+        "node_modules/concat-map/package.json",
+        "node_modules/fs-plus/package.json",
+        "node_modules/fs.realpath/package.json",
+        "node_modules/glob/node_modules/minimatch/package.json",
+        "node_modules/glob/package.json",
+        "node_modules/inflight/package.json",
+        "node_modules/inherits/package.json",
+        "node_modules/lru-cache/package.json",
+        "node_modules/minimatch/package.json",
+        "node_modules/minimist/package.json",
+        "node_modules/mkdirp/package.json",
+        "node_modules/once/package.json",
+        "node_modules/path-is-absolute/package.json",
+        "node_modules/rimraf/node_modules/glob/package.json",
+        "node_modules/rimraf/package.json",
+        "node_modules/sigmund/package.json",
+        "node_modules/underscore/package.json",
+        "node_modules/underscore-plus/package.json",
+        "node_modules/wrappy/package.json",
+        "package.json"
+      ],
+      ".coffee": [
+        "lib/auto-update-packages.coffee",
+        "lib/package-updater.coffee"
+      ],
+      ".js": [
+        "node_modules/async/dist/async.js",
+        "node_modules/async/dist/async.min.js",
+        "node_modules/async/lib/async.js",
+        "node_modules/balanced-match/index.js",
+        "node_modules/brace-expansion/index.js",
+        "node_modules/concat-map/example/map.js",
+        "node_modules/concat-map/index.js",
+        "node_modules/fs-plus/lib/fs-plus.js",
+        "node_modules/fs.realpath/index.js",
+        "node_modules/fs.realpath/old.js",
+        "node_modules/glob/examples/g.js",
+        "node_modules/glob/examples/usr-local.js",
+        "node_modules/glob/glob.js",
+        "node_modules/glob/node_modules/minimatch/minimatch.js",
+        "node_modules/inflight/inflight.js",
+        "node_modules/inherits/inherits.js",
+        "node_modules/inherits/inherits_browser.js",
+        "node_modules/lru-cache/lib/lru-cache.js",
+        "node_modules/minimatch/minimatch.js",
+        "node_modules/minimist/example/parse.js",
+        "node_modules/minimist/index.js",
+        "node_modules/mkdirp/bin/cmd.js",
+        "node_modules/mkdirp/examples/pow.js",
+        "node_modules/mkdirp/index.js",
+        "node_modules/once/once.js",
+        "node_modules/path-is-absolute/index.js",
+        "node_modules/rimraf/bin.js",
+        "node_modules/rimraf/node_modules/glob/common.js",
+        "node_modules/rimraf/node_modules/glob/glob.js",
+        "node_modules/rimraf/node_modules/glob/sync.js",
+        "node_modules/rimraf/rimraf.js",
+        "node_modules/sigmund/bench.js",
+        "node_modules/sigmund/sigmund.js",
+        "node_modules/underscore/underscore-min.js",
+        "node_modules/underscore/underscore.js",
+        "node_modules/underscore-plus/lib/underscore-plus.js",
+        "node_modules/wrappy/wrappy.js"
+      ]
+    },
+    "folders": [
+      {
+        "paths": [
+          "",
+          "lib",
+          "spec"
+        ],
+        "dependencies": {
+          "fs-plus": "^2.0.4",
+          "glob": "^3.2.9"
+        }
+      },
+      {
+        "paths": [
+          "node_modules/brace-expansion"
+        ],
+        "dependencies": {
+          "balanced-match": "^1.0.0",
+          "concat-map": "0.0.1"
+        }
+      },
+      {
+        "paths": [
+          "node_modules/fs-plus/lib",
+          "node_modules/fs-plus"
+        ],
+        "dependencies": {
+          "async": "^1.5.2",
+          "mkdirp": "^0.5.1",
+          "rimraf": "^2.5.2",
+          "underscore-plus": "1.x"
+        }
+      },
+      {
+        "paths": [
+          "node_modules/glob/examples",
+          "node_modules/glob",
+          "node_modules/glob/test"
+        ],
+        "dependencies": {
+          "inherits": "2",
+          "minimatch": "0.3"
+        }
+      },
+      {
+        "paths": [
+          "node_modules/glob/node_modules/minimatch",
+          "node_modules/glob/node_modules/minimatch/test"
+        ],
+        "dependencies": {
+          "lru-cache": "2",
+          "sigmund": "~1.0.0"
+        }
+      },
+      {
+        "paths": [
+          "node_modules/inflight"
+        ],
+        "dependencies": {
+          "once": "^1.3.0",
+          "wrappy": "1"
+        }
+      },
+      {
+        "paths": [
+          "node_modules/minimatch"
+        ],
+        "dependencies": {
+          "brace-expansion": "^1.1.7"
+        }
+      },
+      {
+        "paths": [
+          "node_modules/mkdirp/bin",
+          "node_modules/mkdirp/examples",
+          "node_modules/mkdirp",
+          "node_modules/mkdirp/test"
+        ],
+        "dependencies": {
+          "minimist": "0.0.8"
+        }
+      },
+      {
+        "paths": [
+          "node_modules/once"
+        ],
+        "dependencies": {
+          "wrappy": "1"
+        }
+      },
+      {
+        "paths": [
+          "node_modules/rimraf"
+        ],
+        "dependencies": {
+          "glob": "^7.0.5"
+        }
+      },
+      {
+        "paths": [
+          "node_modules/rimraf/node_modules/glob"
+        ],
+        "dependencies": {
+          "fs.realpath": "^1.0.0",
+          "inflight": "^1.0.4",
+          "inherits": "2",
+          "minimatch": "^3.0.4",
+          "once": "^1.3.0",
+          "path-is-absolute": "^1.0.0"
+        }
+      },
+      {
+        "paths": [
+          "node_modules/underscore-plus/lib",
+          "node_modules/underscore-plus"
+        ],
+        "dependencies": {
+          "underscore": "~1.6.0"
+        }
+      }
+    ]
+  }
+}

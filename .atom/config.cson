@@ -1,0 +1,24 @@
+"*":
+  "advanced-open-file":
+    createDirectories: true
+  core:
+    telemetryConsent: "no"
+    themes: [
+      "seti-ui"
+      "monokai"
+    ]
+  editor:
+    fontSize: 16
+    scrollPastEnd: true
+  "exception-reporting":
+    userId: "c6866c1f-484c-44e6-8413-27460d69f02c"
+  "linter-ui-default":
+    panelHeight: 36
+  "status-bar": {}
+  "vim-mode-plus":
+    notifiedCoffeeScriptNoLongerSupportedToExtendVMP: true
+  welcome:
+    showOnStartup: false
+".html.liquid.text":
+  editor:
+    scrollPastEnd: false
